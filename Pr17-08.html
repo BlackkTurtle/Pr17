@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Практична_робота-17_08</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    <script type="text/babel">
+      class MyComponent extends React.Component {
+        render() { const show = true;
+          if (show) {
+            return <div>текст 1</div>;
+          } else {
+            return <div>текст 2</div>;
+          }
+    }
+      }
+
+      ReactDOM.render(<MyComponent />, document.getElementById('root'));
+    </script>
+  </body>
+</html>

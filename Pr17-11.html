@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Практична_робота-17_11</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    <script type="text/babel">
+        class App extends React.Component {
+          getText() {
+            return '<p>текст</p>';
+          }
+          getNum1() {
+      return 1;
+    }
+
+    getNum2() {
+      return 2;
+    }
+
+    render() {
+      const sum = this.getNum1() + this.getNum2();
+
+      return <div>текст {sum}</div>;
+    }
+  }
+
+  ReactDOM.render(<App />, document.getElementById('root'));
+</script>
+  </body>
+</html>
